@@ -184,5 +184,5 @@ if __name__ == '__main__':
 
     # 不要なリストを削除する
     for i in classes:
-        subprocess.call("del {0}\\config\\{1}_list.txt".format(
+        subprocess.call("rm {0}/config/{1}_list.txt".format(
             data_dir, i), shell=True)
